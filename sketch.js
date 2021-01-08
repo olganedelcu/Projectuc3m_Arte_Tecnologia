@@ -4,17 +4,22 @@
 * Consiste en una imagen que pretende representar un poema flart
 */ 
 
-
+let img;
 function setup() {
   createCanvas(400, 400);
   strokeWeight(5);
+  background(100);
+
 }
+
 
 function draw() {
   background(255);
   //Outside Frame
   rect(-1, -1, 400, 400);
-    
+  img = loadImage('/ornitorrinco 1.jpg');
+  image(img,10,10,50,50);
+
   //Fill in the blue
   fill(106,55,255);
   rect(0,280,80,400);
